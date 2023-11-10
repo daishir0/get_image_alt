@@ -47,7 +47,19 @@ This project is open-sourced under the MIT License.
 
 ## 概要
 get_image_alt.pyは、WCAGガイドラインH37に従い画像のALTテキスト説明を提供するPythonユーティリティです。このスクリプトは、Webアクセシビリティ基準を満たす説明を生成するためにOpenAIのGPT-4モデルとインターフェースします。
+```
+$ python get_image_alt.py http://foo-bar.com/image/image1.jpg
+ALT text for the image:
+秋の紅葉が美しい森とその反射が見られる静かな湖の風景。
 
+$ python get_image_alt.py https://foo-bar.com/image/image2.jpg
+ALT text for the image:
+スーツを着た男性と白いブラウスを着た女性が対話している様子。
+
+$ python get_image_alt.py https://foo-bar.com/image/image3.jpg
+ALT text for the image:
+ノートパソコンが置かれたテーブルを挟んで笑顔で会話をしている男女３人の様子。
+```
 ## インストール方法
 
 ```bash
